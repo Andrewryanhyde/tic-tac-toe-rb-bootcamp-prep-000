@@ -151,6 +151,8 @@ end
 
 def play(board)
   input = gets
+  input = gets
+  input = gets
   round = 0
   until over?(board) == true || round = 9
     turn(board)
