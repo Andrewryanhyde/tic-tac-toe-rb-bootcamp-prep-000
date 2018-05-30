@@ -150,15 +150,15 @@ def winner(board)
 end
 
 
-def play
-  input = gets
-  until over? == true
-    turn
+def play(board)
+  while !over?(board)
+    turn(board)
   end
-
-  if won?
-    puts "Congratulations!"
-  elsif draw?
-    puts "It's a Draw!"
+  if won?(board)
+    puts "Congratulations " + winner(board) + "!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  else
+    #do nothing
   end
 end
