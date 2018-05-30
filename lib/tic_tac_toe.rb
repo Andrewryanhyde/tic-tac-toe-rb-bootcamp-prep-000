@@ -130,7 +130,7 @@ end
 def over?(board) 
   if won?(board) || draw?(board) == true || full?(board) == true 
     return true 
-  elsif round = 9
+  elsif round > 9
     return true
   else 
     return false
