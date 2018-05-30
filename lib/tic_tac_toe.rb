@@ -149,13 +149,15 @@ def winner(board)
   end
 end
 
-def play(board)
-  input = gets
-  round = 0
-  while round < 9 && over?(board) == false
-  turn(board)
-  round += 1
+
+def play
+  until over? == true
+    turn
   end
-  if won?(board) == true 
-   
+
+  if won?
+    puts "Congratulations #{winner}!"
+  elsif draw?
+    puts "It's a Draw!"
+  end
 end
