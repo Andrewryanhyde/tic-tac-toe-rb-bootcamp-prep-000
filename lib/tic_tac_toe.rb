@@ -26,7 +26,7 @@ number = input.to_i
 position = number - 1
 end
 
-def move(board, position, player ="X")
+def move(board, position, player)
   board[position] = player
   return board
 end
