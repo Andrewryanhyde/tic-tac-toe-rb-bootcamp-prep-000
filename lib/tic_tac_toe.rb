@@ -151,9 +151,9 @@ end
 
 
 def play(board)
-  input = gets
+  
   round = 0
-  while !over?(board) && round < 9
+  while over?(board) == false && round < 9
     turn(board)
     round += 1
   end
