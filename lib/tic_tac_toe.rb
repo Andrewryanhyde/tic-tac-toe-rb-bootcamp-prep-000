@@ -31,3 +31,11 @@ def move(board, position, player = "X")
   return board
 end
 
+def valid_move?(board, index)
+  if position_taken(board, index) == false && on_board(index) == true
+    return true 
+  else 
+    return false
+  end
+end
+
