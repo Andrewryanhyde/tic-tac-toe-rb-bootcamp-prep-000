@@ -2,8 +2,7 @@
 
 require_relative '../lib/tic_tac_toe'
 board = [" "," "," "," "," "," "," "," "," "]
-print "Welcome to Tic Tac Toe!
+puts "Welcome to Tic Tac Toe!
 play(board)
 puts "Where would you like to go?"
-input = gets.strip
 
