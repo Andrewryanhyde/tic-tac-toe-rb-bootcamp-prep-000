@@ -156,7 +156,7 @@ def play
   end
 
   if won?
-    puts "Congratulations #{winner}!"
+    puts "Congratulations!"
   elsif draw?
     puts "It's a Draw!"
   end
