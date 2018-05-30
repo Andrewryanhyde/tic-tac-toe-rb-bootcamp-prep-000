@@ -155,5 +155,7 @@ def play(board)
   while round < 9 && over?(board) == false
   turn(board)
   round += 1
-end
+  end
+  if won?(board) == true 
+   
 end
