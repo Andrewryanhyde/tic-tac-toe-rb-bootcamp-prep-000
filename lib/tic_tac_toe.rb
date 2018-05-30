@@ -129,8 +129,6 @@ end
 
 def over?(board) 
   if won?(board) || draw?(board) == true || full?(board) == true 
-    return true 
-  elsif round > 9
     return true
   else 
     return false
@@ -153,7 +151,7 @@ end
 
 def play(board)
   round = 0
-  until over?(board) == true
+  until over?(board) == true || round = 9
     turn(board)
     round += 1
   end
