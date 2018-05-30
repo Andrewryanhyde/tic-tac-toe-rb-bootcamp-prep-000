@@ -150,7 +150,7 @@ def winner(board)
 end
 
 def play(board)
-  if over(board) == true 
+  if over?(board) == true 
     return false
   else
   input = gets
