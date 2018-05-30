@@ -32,7 +32,7 @@ def move(board, position, player)
 end
 
 def valid_move?(board, index)
-  if position_taken(board, index) == false && on_board(index) == true
+  if position_taken?(board, index) == false && on_board(index) == true
     return true 
   else 
     return false
