@@ -151,6 +151,7 @@ end
 
 
 def play
+  input = gets
   until over? == true
     turn
   end
