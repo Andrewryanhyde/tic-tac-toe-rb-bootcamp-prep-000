@@ -150,8 +150,11 @@ def winner(board)
 end
 
 def play(board)
-  until over?(board) == true
-    turn(board)
-  end
+  round = 0
+  while round < 9 
+  turn(board)
+  round += 1
 end
+end
+
 
