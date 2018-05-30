@@ -151,8 +151,10 @@ end
 
 
 def play(board)
-  while !over?(board)
+  round = 0
+  while !over?(board) && round < 9
     turn(board)
+    round += 1
   end
   if won?(board)
     puts "Congratulations " + winner(board) + "!"
