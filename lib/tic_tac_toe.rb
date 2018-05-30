@@ -130,6 +130,8 @@ end
 def over?(board) 
   if won?(board) || draw?(board) == true || full?(board) == true 
     return true 
+  elsif 
+    
   else 
     return false
   end
@@ -152,4 +154,5 @@ end
 def play(board)
   until over?(board) == true
     turn(board)
+    
   end
