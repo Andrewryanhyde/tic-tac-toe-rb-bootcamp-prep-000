@@ -150,10 +150,11 @@ def winner(board)
 end
 
 def play(board)
-  input = gets
+  
   round = 0
   until over?(board) == true || round = 9
     turn(board)
     round += 1
+    input = gets
   end
 end
