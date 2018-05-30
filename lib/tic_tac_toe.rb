@@ -154,10 +154,6 @@ def play(board)
   while round < 9 
   turn(board)
   round += 1
-  if over?(board) == true
-    return false
-  else
-  end
 end
 end
 
