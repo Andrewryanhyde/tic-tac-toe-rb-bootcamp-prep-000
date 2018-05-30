@@ -149,4 +149,11 @@ def winner(board)
   end
 end
 
-
+def play(board)
+  input = gets
+  round = 0
+  while round < 9 
+  turn(board)
+  round += 1
+end
+end
