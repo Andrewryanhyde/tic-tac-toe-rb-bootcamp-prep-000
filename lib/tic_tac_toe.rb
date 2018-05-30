@@ -150,14 +150,10 @@ def winner(board)
 end
 
 def play(board)
-  if over?(board) == true 
-    return false
-  else
   input = gets
   round = 0
-  while round < 9 
+  while round < 9 && over?(board) == false
   turn(board)
   round += 1
-end
 end
 end
